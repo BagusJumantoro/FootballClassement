@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // 🟦 Import JS Bootstrap (opsional, hanya kalau kamu mau komponen seperti modal, dropdown, tooltip, dll)
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import HelloWorld from "./components/HelloWorld.vue";
+import FootballClassement from "./page/FootballClassementPage.vue";
 </script>
 
 <template>
@@ -17,10 +18,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" /> -->
-  <div class="container mt-5">
-    <h1 class="text-center text-primary">Hello Bootstrap + Vue + Vite!</h1>
-    <button class="btn btn-success">Klik Saya</button>
-  </div>
+  <FootballClassement />
 </template>
 
 <style scoped>
@@ -35,5 +33,11 @@ import HelloWorld from "./components/HelloWorld.vue";
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Opsional: Tentukan font-family atau background global di sini */
 }
 </style>
